@@ -50,4 +50,4 @@ OLLAMA_BASE_URL=http://localhost:11434
 ```
 python main.py
 ```
-### This will code take a while if you execute it on your local Mac... Good luck and enjoy!
+### This code will take a while if you execute it on your local Mac... Good luck and enjoy!
