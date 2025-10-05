@@ -1,4 +1,6 @@
-# requirements.txt -- these version are compatible with python version 3.13.1
+# You can follow the steps below to analyze your code in github. You can run everything locally including the LLM.
+
+### requirements.txt -- these version are compatible with python version 3.13.1
 ```
 langchain>=0.1.0,<0.3.0
 langgraph>=0.0.20,<0.3.0
@@ -13,7 +15,7 @@ tiktoken>=0.5.2,<1.0.0
 mcp>=0.9.0,<1.0.0
 ```
 
-# pyenv -- if pyenv is not already isntalled, please follow these steps
+### pyenv -- if pyenv is not already isntalled, please follow these steps
 ```
 brew update
 brew install pyenv
@@ -33,21 +35,21 @@ pip install --upgrade pip
 pip install -r ./requirements.txt
 ```
 
-# ollama installation and running it as docker container
+### ollama installation and running it as docker container
 ```
 docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 docker exec -it ollama ollama pull llama3.2
 ```
 
-# .env
+### .env
 ```
 USE_OLLAMA=true
 OLLAMA_MODEL=llama3.2
 OLLAMA_BASE_URL=http://localhost:11434
 ```
 
-# Run the code
+### Run the code
 ```
 python main.py
 ```
-### This code will take a while if you execute it on your local Mac... Good luck and enjoy!
+#### This code will take a while if you execute it on your local Mac... Good luck and enjoy!
